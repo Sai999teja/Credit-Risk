@@ -1,3 +1,3 @@
 # Credit-Risk
 
-heroku link: https://credit-risk-saiteja.herokuapp.com/
+heroku link: https://credit-saiteja.herokuapp.com/
