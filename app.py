@@ -27,9 +27,9 @@ def predict():
     credit_score = (1-int(output))*100
 
     if output>str(0.5):
-        return render_template('index.html',pred='There is a high chance of defaulting your loan, based on the entered data\n His Credit Score is' ,str(credit_score))
+        return render_template('index.html',pred=f'There is a high chance of defaulting your loan, based on the entered data\n His Credit Score is credit_score')
     else:
-        return render_template('index.html',pred='we can santion him a loan, based on the entered data\n His Credit Score is ', str(credit_score))
+        return render_template('index.html',pred=f'we can santion him a loan, based on the entered data\n His Credit Score is credit_score')
 
 if __name__ == '__main__':
     app.run(debug=True)
