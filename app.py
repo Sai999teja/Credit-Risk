@@ -24,7 +24,6 @@ def predict():
     print(final)
     prediction=model.predict_proba(final)
     output='{0:.{1}f}'.format(prediction[0][1], 2)
-    credit_score = (1-int(output))*100
 
     if output>str(0.5):
         return render_template('index.html',pred='There is a high chance of defaulting your loan, based on the entered data.')
